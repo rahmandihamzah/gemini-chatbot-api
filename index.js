@@ -12,9 +12,6 @@ app.use(cors())
 app.use(express.json())
 app.use(express.static('public'))
 
-// const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY)
-// const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' })
-
 const genAi = new GoogleGenAI({
   apiKey: process.env.gemini_api_key,
 });
